@@ -1,0 +1,22 @@
+uuid: 633d7213-3f8f-41c3-bbad-8e48b0da36d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: Paypal
+weight: null
+plugin: paypal_express_checkout
+configuration:
+  api_username: harold.emilio_api1.gmail.com
+  api_password: RL796C3EW9GRFTFR
+  shipping_prompt: shipping_skip
+  signature: AvNirAqHFcnnO7Mi9RRbNDVAQJiIAX83mWhpPTqKhfZp7p83.pmPRVYp
+  solution_type: Mark
+  display_label: PayPal
+  mode: live
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

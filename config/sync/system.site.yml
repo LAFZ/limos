@@ -1,0 +1,14 @@
+uuid: c4a85a94-5751-4f6c-8e87-13fd6204971b
+name: Limos
+mail: user@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

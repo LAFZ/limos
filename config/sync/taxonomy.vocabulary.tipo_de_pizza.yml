@@ -1,0 +1,9 @@
+uuid: e8bf0470-52e0-477c-a5b7-64716fd9013b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tipo de pizza'
+vid: tipo_de_pizza
+description: 'Sabores de pizza'
+hierarchy: 0
+weight: 0

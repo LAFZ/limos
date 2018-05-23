@@ -1,0 +1,51 @@
+uuid: 3f5a39a0-3fec-4758-9d45-e80925f7749a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.pizza
+    - core.entity_view_mode.commerce_product.categorias
+    - field.field.commerce_product.pizza.body
+    - field.field.commerce_product.pizza.field_image
+    - field.field.commerce_product.pizza.field_ti
+    - field.field.commerce_product.pizza.stores
+    - field.field.commerce_product.pizza.variations
+    - image.style.flexslider_thumbnail
+  module:
+    - image
+    - text
+id: commerce_product.pizza.categorias
+targetEntityType: commerce_product
+bundle: pizza
+mode: categorias
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: flexslider_thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ti:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  created: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

@@ -1,0 +1,12 @@
+uuid: 241b66ff-8437-46ca-be9a-58d5dba8bc67
+langcode: en
+status: true
+dependencies: {  }
+id: categorias
+label: Categorias
+description: ''
+use_admin_theme: false
+path: /categorias
+access_logic: and
+access_conditions: {  }
+parameters: {  }

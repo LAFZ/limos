@@ -1,0 +1,80 @@
+uuid: 7bf50cea-77b0-4769-99fd-cf7b3fda00f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.duplicate_of_featured_type_pizza
+    - views.view.featured_categories_products
+    - views.view.featured_type_pizza
+  content:
+    - 'block_content:basic:e72f042e-e5d6-4100-a903-95b95d99e2c5'
+  module:
+    - block_content
+    - panels
+    - views
+id: home-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    f8ca49f4-a46f-4ad8-995d-7ed85dd9e927:
+      id: 'views_block:featured_categories_products-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: f8ca49f4-a46f-4ad8-995d-7ed85dd9e927
+      context_mapping: {  }
+    ec3b23eb-0dc4-4f12-b138-f462cf0eda4d:
+      id: 'views_block:featured_type_pizza-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 2
+      uuid: ec3b23eb-0dc4-4f12-b138-f462cf0eda4d
+      context_mapping: {  }
+    09d76881-47cc-4a0d-942c-80b82b92f6c3:
+      id: 'views_block:duplicate_of_featured_type_pizza-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: -1
+      uuid: 09d76881-47cc-4a0d-942c-80b82b92f6c3
+      context_mapping: {  }
+    bd3893eb-f8e4-488f-a276-e2446d36ca08:
+      id: 'block_content:e72f042e-e5d6-4100-a903-95b95d99e2c5'
+      label: 'Bloque texto imagen'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 1
+      uuid: bd3893eb-f8e4-488f-a276-e2446d36ca08
+      context_mapping: {  }
+  id: panels_variant
+  uuid: b4549702-27f3-400d-9edf-568061964a8f
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: home-panels_variant-0
+  builder: standard
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

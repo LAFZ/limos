@@ -1,0 +1,7 @@
+uuid: 30017e11-8f45-4767-9949-ae5ec656c4cc
+langcode: en
+status: true
+dependencies: {  }
+id: tamano
+label: Tamaño
+elementType: select

@@ -1,0 +1,25 @@
+uuid: 896cdf54-63c4-446d-ab15-ee7b5061d45a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: featured_categories_pizza
+label: 'Featured Categories Pizza'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: taxonomy_term
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_pizza: tipo_de_pizza
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

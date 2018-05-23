@@ -1,0 +1,11 @@
+uuid: dee0cc35-f593-4733-8ae3-c707a8d4434c
+langcode: en
+status: true
+dependencies: {  }
+id: pizza
+label: Pizza
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,25 @@
+uuid: 0f0f6db4-de92-4c9d-8a2a-0dff80915b12
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: featured_products
+label: 'Featured Products'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: commerce_product
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      pizza: pizza
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 4
+  act_as_queue: false
+  reverse_in_admin: false

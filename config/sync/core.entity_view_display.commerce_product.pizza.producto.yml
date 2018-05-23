@@ -1,0 +1,37 @@
+uuid: 77f6c503-b45d-4c5a-acbc-6f477ee17739
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.pizza
+    - core.entity_view_mode.commerce_product.producto
+    - field.field.commerce_product.pizza.body
+    - field.field.commerce_product.pizza.field_image
+    - field.field.commerce_product.pizza.field_ti
+    - field.field.commerce_product.pizza.stores
+    - field.field.commerce_product.pizza.variations
+    - image.style.flexslider_thumbnail
+  module:
+    - image
+id: commerce_product.pizza.producto
+targetEntityType: commerce_product
+bundle: pizza
+mode: producto
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: flexslider_thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  created: true
+  field_ti: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

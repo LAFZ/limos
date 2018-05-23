@@ -1,0 +1,29 @@
+uuid: b6bb3d4a-03c7-4391-89e2-bbccb346322b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.pizza
+    - field.storage.commerce_product.field_ti
+    - taxonomy.vocabulary.tipo_de_pizza
+id: commerce_product.pizza.field_ti
+field_name: field_ti
+entity_type: commerce_product
+bundle: pizza
+label: 'Tipo de pizza'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_pizza: tipo_de_pizza
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

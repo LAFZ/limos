@@ -1,0 +1,10 @@
+uuid: 3b31a6e6-293e-4aaa-965f-beff4ce672b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.producto
+label: 'Producto Carrousel'
+targetEntityType: commerce_product
+cache: true

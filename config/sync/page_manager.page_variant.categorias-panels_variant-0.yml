@@ -1,0 +1,53 @@
+uuid: 115809da-3d6d-419c-9dbc-09d2d1faa697
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.categorias
+    - views.view.duplicate_of_featured_type_pizza
+    - views.view.duplicate_of_featured_type_pizza_categorias
+  module:
+    - panels
+    - views
+id: categorias-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    e86412aa-7a8a-491f-be65-e603b24e5e62:
+      id: 'views_block:duplicate_of_featured_type_pizza-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: e86412aa-7a8a-491f-be65-e603b24e5e62
+      context_mapping: {  }
+    9b17f0aa-3a35-43b4-a984-b01513730b39:
+      id: 'views_block:duplicate_of_featured_type_pizza_categorias-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 9b17f0aa-3a35-43b4-a984-b01513730b39
+      context_mapping: {  }
+  id: panels_variant
+  uuid: d5e74bad-8a6a-47ee-a913-eade2ab14304
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: categorias-panels_variant-0
+  builder: standard
+page: categorias
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

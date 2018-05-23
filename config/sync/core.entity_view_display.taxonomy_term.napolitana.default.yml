@@ -1,0 +1,21 @@
+uuid: 6daf9cf8-995c-4d0a-a09a-0e45d4448f64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.napolitana
+  module:
+    - text
+id: taxonomy_term.napolitana.default
+targetEntityType: taxonomy_term
+bundle: napolitana
+mode: default
+content:
+  description:
+    label: visually_hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
