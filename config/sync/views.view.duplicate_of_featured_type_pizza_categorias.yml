@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.pizza
-    - core.entity_view_mode.commerce_product.categorias
+    - core.entity_view_mode.commerce_product.catalogo
     - entityqueue.entity_queue.featured_products
   module:
     - commerce
@@ -70,7 +70,7 @@ display:
         type: 'entity:commerce_product'
         options:
           relationship: none
-          view_mode: categorias
+          view_mode: catalogo
       fields:
         title:
           table: commerce_product_field_data
@@ -158,7 +158,7 @@ display:
           entity_field: type
           plugin_id: commerce_entity_bundle
       sorts: {  }
-      title: 'Featured Type Pizza'
+      title: Categories
       header: {  }
       footer: {  }
       empty: {  }
@@ -192,6 +192,23 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:entityqueue.entity_queue.featured_products'
+        - entity_field_info
+        - views_data
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: categories
     cache_metadata:
       max-age: -1
       contexts:

@@ -158,7 +158,7 @@ display:
           entity_field: type
           plugin_id: commerce_entity_bundle
       sorts: {  }
-      title: 'Featured Type Pizza'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }

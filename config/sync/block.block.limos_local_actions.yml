@@ -1,0 +1,20 @@
+uuid: b94b9261-a8c6-4361-8174-b6f93ae3e38c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - limos
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: limos_local_actions
+theme: limos
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

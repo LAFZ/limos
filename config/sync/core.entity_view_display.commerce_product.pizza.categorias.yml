@@ -10,7 +10,7 @@ dependencies:
     - field.field.commerce_product.pizza.field_ti
     - field.field.commerce_product.pizza.stores
     - field.field.commerce_product.pizza.variations
-    - image.style.flexslider_thumbnail
+    - image.style.categoriapizza
   module:
     - commerce_product
     - image
@@ -23,7 +23,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -31,29 +31,36 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: flexslider_thumbnail
+      image_style: categoriapizza
       image_link: content
     third_party_settings: {  }
     type: image
     region: content
   field_ti:
-    weight: 0
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 3
+    weight: 4
     region: content
-    label: above
+    label: hidden
     settings:
       combine: true
     third_party_settings: {  }
 hidden:
   created: true
   stores: true
-  title: true
   uid: true

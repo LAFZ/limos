@@ -10,7 +10,7 @@ dependencies:
     - field.field.commerce_product.pizza.field_ti
     - field.field.commerce_product.pizza.stores
     - field.field.commerce_product.pizza.variations
-    - image.style.flexslider_thumbnail
+    - image.style.categoriapizza
   module:
     - image
 id: commerce_product.pizza.producto
@@ -22,7 +22,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: flexslider_thumbnail
+      image_style: categoriapizza
       image_link: content
     third_party_settings: {  }
     type: image

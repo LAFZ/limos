@@ -1,0 +1,22 @@
+uuid: 16261d79-34cd-41ec-a7b3-ffbcb3748671
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - limos
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: limos_help
+theme: limos
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0037c771-1a54-48c9-944c-2535c8a74731
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - limos
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: limos_messages
+theme: limos
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

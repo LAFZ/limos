@@ -163,7 +163,7 @@ display:
           entity_field: type
           plugin_id: commerce_entity_bundle
       sorts: {  }
-      title: 'Featured Categories Products'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }

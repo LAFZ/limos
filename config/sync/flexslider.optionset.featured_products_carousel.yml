@@ -17,9 +17,9 @@ options:
   randomize: false
   startAt: 0
   itemWidth: 210
-  itemMargin: 5
+  itemMargin: 15
   minItems: 3
-  maxItems: 4
+  maxItems: 3
   move: 1
   directionNav: true
   controlNav: '0'

@@ -1,0 +1,14 @@
+uuid: dfbd2c3a-c6df-4021-8b9c-f8a10382f287
+langcode: en
+status: true
+dependencies: {  }
+name: categoriapizza
+label: categoriaPizza
+effects:
+  c7bf85b9-4b40-402e-95c8-744c68353cce:
+    uuid: c7bf85b9-4b40-402e-95c8-744c68353cce
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 350

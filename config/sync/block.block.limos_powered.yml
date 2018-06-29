@@ -1,0 +1,22 @@
+uuid: 61d24ebe-66de-4bc3-920d-9069d25f2171
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - limos
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: limos_powered
+theme: limos
+region: footer_fifth
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
