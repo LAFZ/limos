@@ -27,6 +27,9 @@
         "drupal/devel": "^1.2",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/flexslider": "^2.0@beta",
+        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_source_csv": "^2.2",
+        "drupal/migrate_tools": "^2.0",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.3",
         "drush/drush": "^9.0.0",
@@ -74,6 +77,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        }
+        },
+        "patches": {
+            "drupal/migrate_tools": {
+                "Port commands to drush 9": "https://www.drupal.org/files/issues/migrate_tools-2914005-41.patch"
+            }
+         }
     }
 }
