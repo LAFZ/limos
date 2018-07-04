@@ -1,0 +1,59 @@
+uuid: 7dcf8bc4-0dfe-4679-a4b2-b3647dded00d
+langcode: en
+status: true
+dependencies: {  }
+id: articles_project
+migration_tags: null
+migration_group: null
+label: Articles
+source:
+  plugin: csv
+  path: modules/custom/limos/csv/articles.csv
+  header_row_count: 1
+  keys:
+    - id
+  delimeter: ','
+  enclosure: '"'
+  column_names:
+    -
+      id: ID
+    -
+      title: Title
+    -
+      body: Body
+    -
+      tags: Tags
+process:
+  title: title
+  type:
+    -
+      plugin: default_value
+      default_value: article
+  body/value: body
+  body/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  uid:
+    -
+      plugin: default_value
+      default_value: 1
+  field_tags:
+    -
+      plugin: explode
+      source: tags
+      delimiter: ','
+    -
+      plugin: entity_generate
+      value_key: name
+      bundle_key: vid
+      bundle: tags
+      entity_type: taxonomy_term
+      ignore_case: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null
